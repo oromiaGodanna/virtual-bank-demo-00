@@ -1,0 +1,19 @@
+{
+  "name": "virtualbank",
+  "version": "1.0.0",
+  "description": "A virtual mobile bank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oromia Godanna",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
