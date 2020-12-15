@@ -5,6 +5,8 @@ const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
 const Fawn = require('fawn');;
 const mongoose = require('mongoose');
+const router = express.Router();
+
 
 const app = express();
 const PORT = process.env.PORT || 3030;
@@ -22,11 +24,13 @@ Fawn.init(mongoose);
 
 app.use(express.json());
 
-app.user('/user', user);
-app.user('/account', account);
-app.user('/transaction', transaction);
+app.use('/user', user);
+app.use('/account', account);
+app.use('/transaction', transaction);
 
 
 app.listen(PORT, () => {
      console.log(`Server is running in http://localhost:${PORT}`)
 });
+
+module.exports = router; 

@@ -7,7 +7,7 @@ let address = new Object();
 const User = mongoose.model('User', new mongoose.Schema({
     
     accountNo: {
-        type: Number,
+        type: String,
         required: true,
     },
     companyName: {

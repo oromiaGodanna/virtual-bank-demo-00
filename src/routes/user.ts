@@ -44,4 +44,4 @@ router.get('/getUser/:id',  async (req, res) => {
 //Delete user
 // router.delete()
 
-module.exports = router;
+module.exports = router; 
