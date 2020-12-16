@@ -5,7 +5,7 @@ const express = require('express');
 const router = express.Router();
 
 
-router.post('/createAccount', async (req, res) => {
+router.post('/createUser', async (req, res) => {
 
     //validate the request 
     console.log(req.body)
